@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Loading</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="source/animate.css">
+        <link rel="stylesheet" href="source/habilidades.css">
         <link rel="stylesheet" href="css/loading.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -11,9 +14,9 @@
     </head>
     <body id="bod">
     <!-- Preloader -->
-       <div id="conte">
-           <canvas id="drawing_canvas"></canvas>
-       </div>
+        <div id="conte">
+            <canvas id="drawing_canvas" class="col-xs-12"></canvas>
+        </div>
     <!-- Termmina preloader -->
         <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
@@ -37,162 +40,195 @@
             </div>
         </nav>
         <div class="container-fluid">
-          <!-- Carrusel -->
-                <div class="row">
-                    <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6">
-                      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
+            <!-- Carrusel -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
                         <ol class="carousel-indicators">
-                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                         </ol>
-
-                        <!-- Wrapper for slides -->
+                    <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
-                          <div class="item active">
-                            <img src="img/Yare/yare1.jpg" alt="Cambiar esto por una foto" class="img-responsive yare">
-                            <div class="carousel-caption">
-                              ...
+                            <div class="item active">
+                                <img src="img/Yare/yare1.jpg" alt="Cambiar esto por una foto" class="img-responsive yare">
+                                <div class="carousel-caption">
+                                ...
+                                </div>
                             </div>
-                          </div>
-                          <div class="item">
-                            <img src="img/Yare/yare2.jpg" alt="Cambiar esto por una foto" class="img-responsive yare">
-                            <div class="carousel-caption">
-                              ...
+                            <div class="item">
+                                <img src="img/Yare/yare2.jpg" alt="Cambiar esto por una foto" class="img-responsive yare">
+                                <div class="carousel-caption">
+                                ...
+                                </div>
                             </div>
-                          </div>
-                          <div class="item">
-                            <img src="img/Yare/yare3.jpg" alt="Cambiar esto por una foto" class="img-responsive yare">
-                            <div class="carousel-caption">
-                              ...
+                            <div class="item">
+                                <img src="img/Yare/yare3.jpg" alt="Cambiar esto por una foto" class="img-responsive yare">
+                                <div class="carousel-caption">
+                                ...
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                    <!-- aqui termina el carrusel -->
-                    <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6">
-                      <div id="aboutme">
+                </div>
+                <!-- aqui termina el carrusel -->
+                <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6">
+                    <div id="aboutme">
                         <h1>Hola, soy Yare...</h1>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde repellendus, reiciendis maxime inventore? Voluptas facilis quam molestias id corporis libero aliquam. Iusto odit perferendis modi. Ullam aperiam illum minima ipsam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde repellendus, reiciendis maxime inventore? Voluptas facilis quam molestias id corporis libero aliquam. Iusto odit perferendis modi. Ullam aperiam illum minima ipsam.
                         </p>
-                      </div>
                     </div>
                 </div>
-                <!-- inicia Skills -->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <h2>Skills</h2>
-                    <div class="row mgt5">
-                      <div class="col-xs-4">
-                        <img src="img/skills/html-5.png" alt="HTML5" class="center-block skill"/> <br>
-                        <progress value="75" max="100" class="center-block">50%</progress>
-                      </div>
-                      <div class="col-xs-4">
-                        <img src="img/skills/css-3.png" alt="CSS3" class="center-block skill" /> <br>
-                        <progress value="75" max="100" class="center-block">50%</progress>
-                      </div>
-                      <div class="col-xs-4">
-                        <img src="img/skills/javascript.png" alt="javascript" class="center-block skill"/> <br>
-                        <progress value="25" max="100" class="center-block">50%</progress>
-                      </div>
+            </div>
+            <!-- inicia Skills -->
+            <section id="habilidades" class="habilidades">
+                <h1 class="letra_grande" align="center">habilidades</h1>
+                
+                <div class="col-xs-12">
+                    <h2>Desarrollo WEB</h2>
+                    <div id="codeconSkills">
+                        <div class="codeconSkillbar">
+                            <div id="" class="skillBar" skill-percentage="75%" skill-color="#448AFF"> 
+                                <span class="codeconSkillArea ">HTML</span>
+                                <span class="PercentText ">Intermedio</span>
+                            </div>
+                            <img src="img/skills/html-5.png" title="HTML 5" alt="html-5" class="skill-image"  class="">
+
+                        </div>
+                        <div class="codeconSkillbar">
+                            <div id="" class="skillBar" skill-percentage="75%" skill-color="#009688">
+                                <span class="codeconSkillArea ">CSS/CSS3</span>
+                                <span class="PercentText">Intermedio</span>
+                            </div>
+                            <img src="img/skills/css-3.png" title="CSS 3" alt="CSS3" class="skill-image"  class="">
+
+                        </div>
+                        <div class="codeconSkillbar">
+                            <div id="" class="skillBar" skill-percentage="25%" skill-color="#FFC107">
+                                <span class="codeconSkillArea">Javascript</span>
+                                <span class="PercentText">Basico</span>
+
+                            </div>
+                                <img src="img/skills/Javascript.png" alt="Javascript" class="skill-image" title="Javascript" class="">
+
+                        </div>
+                        <div class="codeconSkillbar">
+                            <div id="" class="skillBar" skill-percentage="25%" skill-color="#ff5722">
+                                <span class="codeconSkillArea">jQuery</span>
+                                <span class="PercentText ">Basico</span>
+
+                            </div>
+                            <img src="img/skills/jquery.png" title="JQuery" alt="JQuery" class="skill-image"  class="">
+
+                        </div>
+                        <div class="codeconSkillbar">
+                            <div id="" class="skillBar" skill-percentage="50%" skill-color="#400080">
+                                <span class="codeconSkillArea ">Bootstrap</span>
+                                <span class="PercentText">Intermedio</span>
+
+                            </div>
+                            <img src="img/skills/bootstrap.png" alt="Bootstrap" class="skill-image" title="Bootstrap" class="">
+
+                        </div>
+                        <div class="codeconSkillbar">
+                            <div id="" class="skillBar" skill-percentage="20%" skill-color="#1E9EBE">
+                                <span class="codeconSkillArea">Foundation</span>
+                                <span class="PercentText">Basico</span>
+
+                            </div>
+                            <img src="img/skills/Foundation.png" alt="Foundation" class="skill-image" title="Foundation" class="">
+
+                        </div>
                     </div>
-                    <div class="row mgt5">
-                      <div class="col-xs-4">
-                        <img src="img/skills/bootstrap.png" alt="bootstrap" class="center-block skill"/> <br>
-                        <progress value="50" max="100" class="center-block">50%</progress>
-                      </div>
-                      <div class="col-xs-4">
-                        <img src="img/skills/jquery.png" alt="jquery" class="center-block skill"/> <br>
-                        <progress value="50" max="100" class="center-block">50%</progress>
-                      </div>
-                      <div class="col-xs-4">
-                        <img src="img/skills/Foundation.png" alt="Foundation" class="center-block skill"/> <br>
-                        <progress value="25" max="100" class="center-block ">50%</progress>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <!-- termina skills -->
-                <!-- inicia seccion de proyectos -->
-                <div class="row">
-                  <h2>Mi trabajo</h2>
-                  <div class="col-xs-4 contenedor-img ejemplo-2">
+            </section>
+            <!-- termina skills -->
+            <!-- inicia seccion de proyectos -->
+            <div class="row">
+                <h2>Mi trabajo</h2>
+                <div class="col-xs-4 contenedor-img ejemplo-2">
                     <img src="img/Proyectos/Cinema.png" class="center-block img-responsive" />
-                     <div class="mascara"></div>
-                     <div class="contenido text-center">
-                       <h2>Cinema</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
-                       <a href="#" class="link">Leer mas</a>
+                    <div class="mascara"></div>
+                    <div class="contenido text-center">
+                        <h2>Cinema</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
+                        <a href="#" class="link">Leer mas</a>
                     </div>
-                  </div>
-                  <div class="col-xs-4 contenedor-img ejemplo-2">
+                </div>
+                <div class="col-xs-4 contenedor-img ejemplo-2">
                     <img src="img/Proyectos/Accessories.png" class="center-block img-responsive" />
-                     <div class="mascara"></div>
-                     <div class="contenido text-center">
-                       <h2>Accessories</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
-                       <a href="#" class="link">Leer mas</a>
+                    <div class="mascara"></div>
+                    <div class="contenido text-center">
+                        <h2>Accessories</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
+                        <a href="#" class="link">Leer mas</a>
                     </div>
-                  </div>
-                  <div class="col-xs-4 contenedor-img ejemplo-2">
+                </div>
+                <div class="col-xs-4 contenedor-img ejemplo-2">
                     <img src="img/Proyectos/Flores.png" class="center-block img-responsive" />
-                     <div class="mascara"></div>
-                     <div class="contenido text-center">
-                       <h2>Flores</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
-                       <a href="#" class="link">Leer mas</a>
+                    <div class="mascara"></div>
+                    <div class="contenido text-center">
+                        <h2>Flores</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
+                        <a href="#" class="link">Leer mas</a>
                     </div>
-                  </div>
-                <!-- termina seccion de proyectos -->
-                <!-- Contactame -->
-                <div class="row">
-                  <div class="col-xs-12 text-center">
+                </div>
+            </div>
+            <!-- termina seccion de proyectos -->
+            <!-- Contactame -->
+            <div class="row">
+                <div class="col-xs-12 text-center">
                     <h2>
-                      ¿Te gusto mi trabajo? <br> ¡Contactame!
+                        ¿Te gusto mi trabajo? <br> ¡Contactame!
                     </h2>
-                  </div>
                 </div>
-                <div class="row">
-                  <div class="col-xs-12 text-center">
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
                     <h4>
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                       yarearista@icloud.com
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        yarearista@icloud.com
                     </h4>
                     <h4>
-                      <a href="https://www.linkedin.com/in/yaredi-arista-ugalde-6056a712b?trk=nav_responsive_tab_profile" target="_blank">
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                         Yare Arista
-                      </a>
+                        <a href="https://www.linkedin.com/in/yaredi-arista-ugalde-6056a712b?trk=nav_responsive_tab_profile" target="_blank">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            Yare Arista
+                        </a>
                     </h4>
                     <h4>
-                      <a href="https://github.com/YareArista" target="_blank">
-                        <i class="fa fa-github-alt" aria-hidden="true"></i>
-                         YareArista
-                      </a>
+                        <a href="https://github.com/YareArista" target="_blank">
+                            <i class="fa fa-github-alt" aria-hidden="true"></i>
+                            YareArista
+                        </a>
                     </h4>
                     <h4>
-                      <a href="#">
-                        <i class="fa fa-file-text" aria-hidden="true"></i>
-                        Descarga mi Curriculum
-                      </a>
+                        <a href="#">
+                            <i class="fa fa-file-text" aria-hidden="true"></i>
+                            Descarga mi Curriculum
+                        </a>
                     </h4>
-                  </div>
                 </div>
-                <footer>
-                  <div class="row">
-                    <div class="col-xs-12">
-                      Yaredi Arista | Noviembre 2016 | Laboratoria México
-                    </div>
-                  </div>
-                </footer>
+            </div>
+            <div class="row footer">
+                <div class="col-xs-12">
+                    Yaredi Arista | Noviembre 2016 | Laboratoria México
+                </div>
+            </div>
         </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/loading.js" ></script>
     <script src="js/cerrarpreloading.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="jquery.skills.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".habilidades").skill();
+        });
+    </script>
     <script type="text/javascript" src="js/bootstrap.min.js" ></script>
     </body>
 </html>
